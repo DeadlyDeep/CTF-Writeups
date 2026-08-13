@@ -20,7 +20,7 @@ nmap -sCV -p- 10.48.177.128 --min-rate=3000 -o picklerick
 - **22/tcp** — OpenSSH 8.2p1 (Ubuntu)
 - **80/tcp** — Apache httpd 2.4.41, page title *"Rick is sup4r cool"*
 
-![nmap scan results](images/01-nmap-scan.png)
+![nmap scan results](01-nmap-scan.png)
 
 ## Web Enumeration
 
