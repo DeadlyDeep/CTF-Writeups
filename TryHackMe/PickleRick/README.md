@@ -100,7 +100,7 @@ From the shell, navigated to `/home` and found two users: `rick` and
 
 ![Reading the second ingredient](13-second-ingredient.png)
 
-Checked sudo privileges with `sudo -l` — the `rick` user could run **all**
+Checked sudo privileges with `sudo -l` — the `www-data` user could run **all**
 commands with `sudo`, with no password required.
 
 ![sudo -l showing NOPASSWD ALL](14-sudo-l.png)
