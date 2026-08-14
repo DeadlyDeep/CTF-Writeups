@@ -12,7 +12,7 @@ This is promising as FTP allows anonymous access, which is often a security misc
 
 ![Nmap scan results](image7.png)
 
-![SSH and other services visible](image1.png)
+![SSH and other services visible](/images/image1.png)
 
 ### Web Enumeration
 The website appears to be a simple webpage with minimal content - nothing interesting in the page source.
