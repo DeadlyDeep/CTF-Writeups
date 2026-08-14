@@ -10,7 +10,7 @@ Started with an Nmap scan on the target machine, which revealed:
 
 This is promising as FTP allows anonymous access, which is often a security misconfiguration.
 
-![Nmap scan results](/images/image7.png)
+![Nmap scan results](images/image7.png)
 
 ![SSH and other services visible](/images/image1.png)
 
