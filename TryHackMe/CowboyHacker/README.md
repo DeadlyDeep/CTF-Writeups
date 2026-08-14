@@ -12,12 +12,12 @@ This is promising as FTP allows anonymous access, which is often a security misc
 
 ![Nmap scan results](image7.png)
 
-![SSH and other services visible](./images/image1.png)
+![SSH and other services visible](image1.png)
 
 ### Web Enumeration
 The website appears to be a simple webpage with minimal content - nothing interesting in the page source.
 
-![Website homepage - simple and unremarkable](./images/image12.png)
+![Website homepage - simple and unremarkable](image12.png)
 
 Attempted directory fuzzing using:
 - `feroxbuster`
@@ -34,15 +34,15 @@ Retrieved two files:
 - `task.txt`
 - `locks.txt`
 
-![FTP login and file retrieval](./images/image10.png)
+![FTP login and file retrieval](image10.png)
 
 **task.txt** contained information about a user called `lin`:
 
-![Contents of task.txt showing username 'lin'](./images/image8.png)
+![Contents of task.txt showing username 'lin'](image8.png)
 
 **locks.txt** contained a list of passwords for brute forcing:
 
-![Password list from locks.txt](./images/image9.png)
+![Password list from locks.txt](image9.png)
 
 ### SSH Brute Force
 With a username (`lin`) and a password list (`locks.txt`), I proceeded to brute force SSH using **Hydra**:
@@ -51,7 +51,7 @@ With a username (`lin`) and a password list (`locks.txt`), I proceeded to brute 
 hydra -l lin -P locks.txt ssh://target_ip
 ```
 
-![Hydra brute force results - credentials found](./images/image6.png)
+![Hydra brute force results - credentials found](image6.png)
 
 **Result:** Successfully obtained valid SSH credentials!
 
@@ -64,7 +64,7 @@ ssh lin@target_ip
 
 Retrieved the user flag from the home directory:
 
-![User flag captured](./images/image4.png)
+![User flag captured](image4.png)
 
 ## Privilege Escalation
 
@@ -75,14 +75,14 @@ Checked sudo privileges using:
 sudo -l
 ```
 
-![Sudo privileges - tar binary available](./images/image3.png)
+![Sudo privileges - tar binary available](image3.png)
 
 Found that the `lin` user can run `/bin/tar` with sudo privileges without a password.
 
 ### Exploitation via GTFObins
 Searched GTFObins for `tar` privilege escalation techniques and found a method to spawn a shell:
 
-![GTFObins tar privilege escalation method](./images/image2.png)
+![GTFObins tar privilege escalation method](image2.png)
 
 Used the discovered exploit:
 
@@ -90,7 +90,7 @@ Used the discovered exploit:
 sudo /bin/tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/bash
 ```
 
-![Executing the tar privilege escalation](./images/image11.png)
+![Executing the tar privilege escalation](image11.png)
 
 This command exploits tar's checkpoint feature to execute an arbitrary shell as root.
 
@@ -103,7 +103,7 @@ ls -la
 cat flag.txt  # or root.txt
 ```
 
-![Root flag retrieved](./images/image5.png)
+![Root flag retrieved](image5.png)
 
 Successfully retrieved the root flag!
 
