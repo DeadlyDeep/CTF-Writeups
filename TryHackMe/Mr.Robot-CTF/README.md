@@ -22,7 +22,7 @@ Identified the following open services:
 ### Web Service Discovery
 Accessed the web service on port 80. The homepage is designed like a terminal interface with several interactive commands available:
 
-![Website homepage - terminal interface](./images/image2.png)
+![Website homepage - terminal interface](./Images/image2.png)
 
 The webpage features the following commands:
 - **Prepare** - Shows a video related to the Mr. Robot show
