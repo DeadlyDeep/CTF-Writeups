@@ -1,1 +1,1 @@
-Writeups on CTFs I have solved on TryHackMe
+Writeups on some CTFs I have solved on TryHackMe
