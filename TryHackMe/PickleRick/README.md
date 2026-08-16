@@ -1,4 +1,5 @@
 # Pickle Rick — TryHackMe Writeup
+[Visit CTF on tryhackme](https://tryhackme.com/room/picklerick)
 
 A walkthrough for the **Pickle Rick** room on TryHackMe — a beginner-friendly
 Rick and Morty themed CTF that covers web enumeration, a PHP login panel,
