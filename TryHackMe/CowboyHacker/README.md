@@ -1,4 +1,4 @@
-# Cowboy Hacker - CTF Writeup
+# Bounty Hacker - CTF Writeup
 
 ## Reconnaissance
 
