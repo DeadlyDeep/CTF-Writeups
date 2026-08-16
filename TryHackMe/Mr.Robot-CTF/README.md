@@ -13,7 +13,7 @@ The challenge simulates a real penetration test scenario with multiple exploitat
 ### Port Scanning
 Performed an Nmap scan to identify open ports and services on the target machine.
 
-![Nmap scan results showing open ports](./images/image1.png)
+![Nmap scan results showing open ports](./Images/image1.png)
 
 Identified the following open services:
 - **SSH** - Port 22
