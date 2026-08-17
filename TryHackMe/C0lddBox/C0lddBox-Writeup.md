@@ -4,6 +4,7 @@
 > **Room:** C0lddBox  
 > **Difficulty:** Beginner  
 > **Objective:** Obtain the user and root flags.
+> [Visit CTF on tryhackme](https://tryhackme.com/room/c0lddbox)
 
 ---
 
