@@ -2,6 +2,8 @@
 
 A step-by-step write-up for the **Mr. Robot CTF** machine from TryHackMe.
 
+[Visit CTF on TryHackMe](https://tryhackme.com/room/mrrobot)
+
 > **Disclaimer:** This write-up is for an authorized CTF/lab environment. Do not apply these techniques to systems you do not have explicit permission to test.
 
 ## Table of Contents
