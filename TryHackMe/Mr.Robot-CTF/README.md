@@ -106,17 +106,9 @@ At first glance, the page looked like a rabbit hole. However, scrolling further 
 
 ![Encoded string](assets/09.png)
 
-The trailing `=` was a strong indication that the value was Base64-encoded. Decoding it produced credentials:
-
-```text
-elliot : ER28-0652
-```
+The trailing `=` was a strong indication that the value was Base64-encoded. Decoding it produced credentials
 
 ![Base64 decoding](assets/10.png)
-
-> The credentials above are specific to the CTF environment and are included only to document the attack path.
-
----
 
 ## 6. WordPress Login
 
