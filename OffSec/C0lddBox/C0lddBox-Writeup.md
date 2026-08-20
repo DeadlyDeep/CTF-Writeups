@@ -132,7 +132,7 @@ The `local.txt` file was present, so we took the user flag from that file.
 
 ## 7. Privilege Escalation via SUID
 
-Since the user flag was inaccessible, I enumerated SUID binaries:
+Since the root flag is inaccessible, I enumerated SUID binaries:
 
 ```bash
 find / -perm -4000 -type f 2>/dev/null
