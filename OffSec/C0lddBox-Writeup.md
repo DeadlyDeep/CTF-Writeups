@@ -124,9 +124,9 @@ I then moved to the user's home directory:
 cd /home/c0ldd
 ```
 
-A `user.txt` file was present, but the current shell could not read it.
+The `local.txt` file was present, so we took the user flag from that file.
 
-![Attempt to read user flag](images/16-user-flag-attempt.png)
+![Got user flag](images/16-user-flag-attempt.png)
 
 ---
 
@@ -150,9 +150,9 @@ The `find` binary turned out to be the useful one.
 
 Using the SUID `find` binary, I obtained a root shell.
 
-At this point, both flags were accessible. **The flag values have been redacted from the screenshot for publication.**
+At this point, root flag was accessible. **The flag values have been redacted from the screenshot for publication.**
 
-![Flags — redacted](images/20-flags-redacted.png)
+![Flag — redacted](images/20-flags-redacted.png)
 
 ---
 
