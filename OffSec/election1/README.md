@@ -243,27 +243,20 @@ The exploit successfully resulted in root access.
 
 I then verified access to the root-owned filesystem and retrieved the root flag:
 
-```text
-proof.txt
-```
-
-![proof.txt](images/01_31.png)
-
----
-
 # 10. Alternative Path — phpMyAdmin
 
 The original notes also document another route through the web application.
 
 The phpMyAdmin installation was still using default credentials. Logging into phpMyAdmin exposed credentials associated with the Election application.
 
-![phpMyAdmin alternative route](images/01_32.png)
+![phpMyAdmin alternative route](images/01_31.png)
 
 The Election application's password was stored as a hash.
 
 The original write-up notes that the hash could be cracked using an online cracking service, after which the recovered credentials could be used to log into the Election application.
 
-![Election login](images/01_33.png)
+![Election login](images/01_32.png)
+![election login2](images/01_33.png)
 
 This provides an alternative way to reach the application credentials without relying on the same recursive enumeration path.
 
