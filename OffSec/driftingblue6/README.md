@@ -81,10 +81,6 @@ Inspecting the page source provided another useful clue.
 
 With the web service identified, the next step was directory enumeration.
 
-
-
-I also experimented with `.zip` extensions and multiple wordlists, but the initial attempts did not produce anything useful.
-
 ![ZIP enumeration attempt](images/05.png)
 
 The `/textpattern/textpattern` path, however, exposed a Textpattern installation.
