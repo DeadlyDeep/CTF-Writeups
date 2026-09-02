@@ -40,7 +40,7 @@ The target application appears to be a web server. Initial browsing revealed:
 
 ![Web Application Interface](images/image30.png)
 
-Examining the page source provided valuable information about the application structure and technologies in use:
+Examining the page source just provided a joke:
 
 ![Page Source Analysis](images/image13.png)
 
