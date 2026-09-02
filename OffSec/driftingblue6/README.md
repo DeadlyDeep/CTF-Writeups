@@ -69,10 +69,11 @@ The first step was a standard Nmap scan against the target.
 A closer look at the web service revealed the target's website.
 
 ![Website](images/02.png)
+![Page source](images/03.png)
 
 Inspecting the page source provided another useful clue.
 
-![Page source](images/03.png)
+![Directory bruteforcing](images/04.png)
 
 ---
 
@@ -80,7 +81,7 @@ Inspecting the page source provided another useful clue.
 
 With the web service identified, the next step was directory enumeration.
 
-![Directory bruteforcing](images/04.png)
+
 
 I also experimented with `.zip` extensions and multiple wordlists, but the initial attempts did not produce anything useful.
 
