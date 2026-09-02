@@ -83,7 +83,7 @@ With the web service identified, the next step was directory enumeration.
 
 ![ZIP enumeration attempt](images/05.png)
 
-The `/textpattern/textpattern` path, however, exposed a Textpattern installation.
+The `/robots` path, however, exposed a Textpattern installation.
 
 ![Textpattern installation](images/06.png)
 
