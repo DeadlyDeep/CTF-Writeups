@@ -53,6 +53,7 @@ Examining the page source just provided a joke:
 Performed comprehensive directory brute-forcing to identify hidden endpoints and exposed resources:
 
 ![Directory Fuzzing - First Pass](images/image8.png)
+
 Got a hint on /robots directory
 
 ![Directory Fuzzing - Results](images/image12.png)
