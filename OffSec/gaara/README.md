@@ -21,7 +21,7 @@ A complete walkthrough of the Gaara challenge from OffSec Play Lab, covering rec
 
 Starting with a comprehensive Nmap scan to identify open ports and services:
 
-![Nmap Scan](./images/image1.png)
+![Sudo Check](./images/image5.png)
 
 *Nmap scan results showing available services on the target*
 
@@ -29,7 +29,7 @@ Starting with a comprehensive Nmap scan to identify open ports and services:
 
 Accessed the web application running on the target:
 
-![Website](./images/image2.png)
+![Root Access](./images/image8.png)
 
 *The target website interface*
 
@@ -45,7 +45,7 @@ Performed extensive directory fuzzing using multiple wordlists to identify hidde
 
 Attempted SSH enumeration against the `gaara` username:
 
-![SSH Brute Force](./images/image3.png)
+![User Flag](./images/image4.png)
 
 *SSH brute force results*
 
@@ -53,7 +53,7 @@ Attempted SSH enumeration against the `gaara` username:
 
 Successfully gained initial access to the system:
 
-![User Flag](./images/image4.png)
+![SSH Brute Force](./images/image3.png)
 
 *User flag captured from the compromised account*
 
@@ -65,7 +65,7 @@ Successfully gained initial access to the system:
 
 First, checked for user-level sudo privileges that could be executed without a password:
 
-![Sudo Check](./images/image5.png)
+
 
 *No additional sudo privileges available for direct exploitation*
 
@@ -73,7 +73,7 @@ First, checked for user-level sudo privileges that could be executed without a p
 
 Enumerated SUID (Set User ID) binaries available on the system:
 
-![SUID Binaries](./images/image6.png)
+![Website](./images/image2.png)
 
 *SUID binaries found on the target system*
 
@@ -83,13 +83,15 @@ Identified that `/usr/bin/gdb` (GNU Debugger) was available with SUID privileges
 
 ![GTFOBins Research](./images/image7.png)
 
+![SUID Binaries](./images/image6.png)
+
 *GTFOBins showing GDB privilege escalation technique*
 
 ### Root Access Achieved
 
 Executed the GDB-based Python command injection:
 
-![Root Access](./images/image8.png)
+![Nmap Scan](./images/image1.png)
 
 *Successful privilege escalation to root user*
 
